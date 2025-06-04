@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="author" content="Gradi Puata">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+    <div class="store-m">
+        <div class="message">
+            <p id="greeting">Hi there, I am Gradi.Thank you for droping by🤖</p>
+            <span id="okay" onclick="hidePopup()">Ok</span>
+        </div>
+    </div>
+  <div id="loader">
+    <i class="fa-brands fa-apple apple-load"></i>
+    <div class="progress-bar">
+        <div class="progress"></div>
+    </div>
+  </div>
+    <header>
+        <nav>
+            <ul class="nav-ul">
+                <li>
+                    <i class="fa-brands fa-apple apple-nav"></i>
+                </li>
+                <li>Gradi</li>
+                <li><a href="#" id="about">About Me</a></li>
+                <li><a href="#" id="projects-click">Projects</a></li>
+                <li><a href="#" onclick="contactClick()">Contact</a></li>
+            </ul>
+             <div class="side">
+                <span style="font-weight: bold;background-color: whitesmoke;color: grey;padding: 3px;
+                border-radius: 10%;">EN</span>
+                <span id="datetime">Mon, Jun 2 10:29PM</span>
+            </div>
+        </nav>
+    </header>
+    
+    <main> 
+        <div id="overlay" class="overlay"></div>
+        <section class="right">
+            <div class="projects">
+                <section class="win-top">
+                    <div>
+                        <span onmouseenter=
+                        "
+                          const x = document.getElementById('x=')
+                          x.textContent = 'x'
+                          x.style.cursor='pointer'
+                        " 
+                        onmouseleave=
+                        "
+                        const x = document.getElementById('x=')
+                        x.textContent=''
+                        " 
+                        onclick=
+                        "
+                             document.getElementById('overlay').style.display = 'none';
+                             document.querySelector('.projects').style.display = 'none';
+                        " 
+                        class="t x" id="x="></span>
+                        <span class="t"></span>
+                        <span class="t"></span>
+                    </div>
+                    <p style="margin: 0 auto;font-weight: bolder;opacity: 0.8;">Projects</p>
+                </section>
+                <div class="pro-main">
+                <div style="display: flex;flex-wrap: wrap;">
+                     <div class="each">
+                     <div class="project" id="p-1">
+                        <p class="description"id="p1" >
+                            This is a Front-End Project for grantfamilychurch,
+                            This website is designed for outreach,
+                            
+                        </p>
+                        <img class="p-img" src="images/project.webp" alt="">
+                    </div>
+                     <p style="display: flex;flex-direction: column;align-items: center;">
+                            <span>Grant Family Church Website</span>
+                            <a href="http://codewithgradi.github.io/GrantFamilyChurch/" target="_blank" class='a-p'>View Live Demo</a>
+                    </p>
+                </div>
+                <div class="each">
+                     <div class="project" id="p-2">
+                        <p class="description "id="p2">
+                            This is a Front-End Project of a landing Page.
+                        </p>
+                        <img class="p-img" src="images/project.webp" alt="">
+                    </div>
+                     <p style="display: flex;flex-direction: column;align-items: center;">
+                            <span>Ecosmartbottle Landing Page</span>
+                            <a href="https://codewithgradi.github.io/Ecosmartbt/" target="_blank" class='a-p'>View Live Demo</a>
+                    </p>
+                </div>
+                <div class="each">
+                     <div class="project" id="p-3">
+                        <p class="description "id="p3">
+                            This is a basic Todo app using JsonPlaceHolder API,
+                        </p>
+                        <img class="p-img" src="images/project.webp" alt="">
+                    </div>
+                     <p style="display: flex;flex-direction: column;align-items: center;">
+                            <span>ToDo App</span>
+                            <a target="_blank" href="https://codewithgradi.github.io/ToDo/" class='a-p'>View Live Demo</a>
+                    </p>
+                </div>
+                <div class="each">
+                     <div class="project" id="p-3">
+                        <p class="description "id="p3">
+                            This a Weather App this give live weather.
+                        </p>
+                        <img class="p-img" src="images/project.webp" alt="">
+                    </div>
+                     <p style="display: flex;flex-direction: column;align-items: center;">
+                            <span>Weather app</span>
+                            <a target="_blank" href="https://codewithgradi.github.io/WetaherAPP/" class='a-p'>View Live Demo</a>
+                    </p>
+                </div>
+                </div>
+                </div>
+               
+                 <div class="grey">
+                        <span></span>
+                        <span></span>
+                    </div>
+            </div>
+            <div class="certs">
+                <section class="win-top">
+                    <div>
+                        <span onmouseenter=
+                        "
+                          const x = document.getElementById('x_')
+                          x.textContent = 'x'
+                          x.style.cursor='pointer'
+                        " 
+                        onmouseleave=
+                        "
+                        const x = document.getElementById('x_')
+                        x.textContent=''
+                        " 
+                        onclick=
+                        "
+                             document.getElementById('overlay').style.display = 'none';
+                             document.querySelector('.certs').style.display = 'none';
+                        " 
+                        class="t x" id="x_"></span>
+                        <span class="t"></span>
+                        <span class="t"></span>
+                    </div>
+                    <p style="margin: 0 auto;font-weight: bolder;opacity: 0.8;">Certifications and Education</p>
+                </section>
+                <div class="certs-main">
+                    <div class="education">
+                        <p style="font-weight: bolder;padding :1rem 0;">Education</p>
+                        <div class="i12" style=
+                        "
+                        display: flex;gap:1rem;flex-direction: column;
+                        ">
+                            <div class=".edu" style=
+                            "margin-bottom: 1rem ;
+                            box-shadow: 2px 2px 10px black;
+                            padding: 1rem;
+                            display: flex;justify-content: space-between;"
+                            >
+                                <img src="images/richfield.png" style="object-fit: cover;height: fit-content;width: 20px;" alt="">
+                                <figcaption style="display: flex;flex-direction: column;">
+                                    <p style="font-weight: bold;">
+                                        Bachelor's Degree in Information technology (2027)
+                                    </p>
+                                    <p style="text-align: center;">
+                                        Richfield Institute of technology
+                                    </p>
+                                </figcaption>
+                            </div>
+                            <div class=".edu" style=
+                            "margin-bottom: 1rem ;
+                             box-shadow: 2px 2px 10px black;
+                                padding: 1rem;
+                            display: flex;justify-content: space-between;
+                            ">
+                                <img src="images/nwood.jpeg" style="object-fit: cover;height: fit-content;width: 20px;" alt="">
+                                <figcaption id="nsc" style="display: flex;padding-right: 100px;flex-direction: column;">
+                                    <p class="nsc" style="font-weight: bold;">
+                                        National Senior Certificate (2022)
+                                    </p>
+                                    <p style="text-align: center;">
+                                        Northwood School
+                                    </p>
+                                </figcaption>
+                            </div>
+                        </div>
+                    </div>
+                        <p style="font-weight: 700;">Industry Badges and Certifications</p>
+
+                    <div class="badges">
+                        <div class="b-e">
+                             <div style="display: flex;">
+                                <img src="images/freecode.jpeg" alt="" style="object-fit: cover;width:20px;height: auto;">
+                                <figcaption style="font-weight: bold;">FreeCodeCamp</figcaption>
+                             </div>
+                             <a target="_blank" href="https://www.freecodecamp.org/certification/codeWithGradi/data-analysis-with-python-v7">
+                                Data Aanlysis With Python
+                             </a>
+                        </div>
+                        <div class="b-e">
+                             <div style="display: flex;">
+                                <img src="images/freecode.jpeg" alt="" style="object-fit: cover;width:20px;height: auto;">
+                                <figcaption style="font-weight: bold;">FreeCodeCamp</figcaption>
+                             </div>
+                             <a target="_blank" href="https://freecodecamp.org/certification/codeWithGradi/responsive-web-design">
+                                Responsive Web Design
+                             </a>
+                        </div>
+                        <div class="b-e" >
+                             <div style="display: flex;">
+                                <img src="images/freecode.jpeg" alt="" style="object-fit: cover;width:20px;height: auto;">
+                                <figcaption style="font-weight: bold;">FreeCodeCamp</figcaption>
+                             </div>
+                            <a target="_blank" href="https://freecodecamp.org/certification/codeWithGradi/foundational-c-sharp-with-microsoft">
+                                Foundational C# with Microsoft
+                             </a>
+                        </div>
+                        <div class="b-e">
+                             <div style="display: flex;">
+                                <img src="images/cisco.jpeg" alt="" style="object-fit: cover;width:20px;height: auto;">
+                                <figcaption style="font-weight: bold;">Cisco</figcaption>
+                             </div>
+                             <a target="_blank" href="https://www.credly.com/badges/6ae22604-f274-4381-8c3b-4c859c2f0ad5/linked_in_profile">
+                                Python Essentials 1
+                             </a>
+                        </div>
+                        <div class="b-e">
+                             <div style="display: flex;">
+                                <img src="images/cisco.jpeg" alt="" style="object-fit: cover;width:20px;height: auto;">
+                                <figcaption style="font-weight: bold;">Cisco</figcaption>
+                             </div>
+                            <a target="_blank" href="https://www.credly.com/badges/a5b04a8f-160c-48e4-8509-13bb0fdba305/linked_in_profile">
+                                Python Essentials 2
+                             </a>
+                        </div>
+                        <div class="b-e">
+                             <div style="display: flex;">
+                                <img src="images/cisco.jpeg" alt="" style="object-fit: cover;width:20px;height: auto;">
+                                <figcaption style="font-weight: bold;">Cisco</figcaption>
+                             </div>
+                              <a target="_blank" href="https://www.credly.com/badges/6a3759dc-391f-44cf-9d23-b5d49aa0a7db/linked_in_profile">
+                                Javascript Essentials 1
+                             </a>
+                        </div>
+                        <div class="b-e">
+                             <div style="display: flex;">
+                                <img src="images/hacker.png" alt="" style="object-fit: cover;width:20px;height: auto;">
+                                <figcaption style="font-weight: bold;">HackerRank</figcaption>
+                             </div>
+                            <a target="_blank" href="https://www.hackerrank.com/certificates/1a67cbf8795c?utm_medium=email&utm_source=mail_template_1393&utm_campaign=hrc_skills_certificate">
+                               SQL (Basic)
+                             </a>
+                        </div>
+                        <div class="b-e">
+                             <div style="display: flex;">
+                                <img src="images/hacker.png" alt="" style="object-fit: cover;width:20px;height: auto;">
+                                <figcaption style="font-weight: bold;">HackerRank</figcaption>
+                             </div>
+                             <a target="_blank" href="https://www.hackerrank.com/certificates/c73e47522f54">
+                                Python Basics
+                             </a>
+                        </div>
+                    </div>
+                    <div class="grey">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="contact">
+                <section class="win-top">
+                    <div>
+                        <span onmouseenter=
+                        "
+                          const x = document.getElementById('x')
+                          x.textContent = 'x'
+                          x.style.cursor='pointer'
+                        " 
+                        onmouseleave=
+                        "
+                        const x = document.getElementById('x')
+                        x.textContent=''
+                        " 
+                        onclick=
+                        "
+                             document.getElementById('overlay').style.display = 'none';
+                             document.querySelector('.contact').style.display = 'none';
+                        " 
+                        class="t x" id="x"></span>
+                        <span class="t"></span>
+                        <span class="t"></span>
+                    </div>
+                    <p style="margin: 0 auto;font-weight: bolder;opacity: 0.8;">About Me</p>
+                </section>
+                <section class="con-main">
+                    <figure style="display: inline;text-align: center;">
+                        <img style="margin: 1rem 0;  display: inline-block;" src="images/apple-removebg-preview.jpg" width="100px" alt="">
+                        <figcaption>
+                            <p style="font-weight: bolder;">Gradi Puata</p>
+                            <p style="font-size: small; text-align: center;">Open to Software Developer Roles</p>
+                        </figcaption>
+                    </figure>
+                    <div class="con-icons">
+                        <span class="io">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>Call</span>
+                        </span>
+                        <span class="io">
+                            <i class="fa-solid fa-globe"></i>
+                            <span>Website</span>
+                        </span>
+                        <span class="io">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>Mail</span>
+                        </span>
+                        <span class="io">
+                            <i class="fa-solid fa-linkedin-in"></i>
+                            <span>Connect</span>
+                        </span>
+                    </div>
+                    <div class="con-content">
+                        <div>
+                            <span>Phone</span>
+                            <span>+27 680 488 872</span>
+                        </div>
+                        <hr>
+                        <div>
+                            <span>Email</span>
+                            <span>gradipuata@gmail.com</span>
+                        </div>
+                        <hr>
+                        <div>
+                            <span>Website</span>
+                            <span>www.gradipuata.vercel.app</span>
+                        </div>
+                    </div>
+                     <div class="grey">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </section>
+
+            </div>
+              <div class="window">
+                <section class="win-top">
+                    <div>
+                        <span onmouseenter=
+                        "
+                          const x = document.getElementById('x-')
+                          x.textContent = 'x'
+                          x.style.cursor='pointer'
+                        " 
+                        onmouseleave=
+                        "
+                        const x = document.getElementById('x-')
+                        x.textContent=''
+                        " 
+                        onclick=
+                        "
+                             document.getElementById('overlay').style.display = 'none';
+                             document.querySelector('.window').style.display = 'none';
+                        " 
+                        class="t x" id="x-"></span>
+
+                        <span class="t"></span>
+                        <span class="t"></span>
+                    </div>
+                    <p style="margin: 0 auto;font-weight: bolder;opacity: 0.8;">About Me</p>
+                </section>
+                <section  class="win-main">
+                    <figure>
+                        <img width="60px" src="images/apple-removebg-preview.jpg" alt="" style="margin: auto;margin-top: 1rem;">
+                        <figcaption>
+                            <p style="text-align: center;font-weight: bolder;font-size: x-large;margin-top: 2rem;">Gradi Puata</p>
+                            <p style="font-size: small;text-align: center;">Open To Junior Software Developer Role</p>
+                        </figcaption>
+                    </figure>
+                    <div class="store">
+                        <div class="skills" style="display: flex;flex-direction: column;text-align: center;margin: 1rem;">
+                        <p style="font-weight: bold;margin-top: 1rem;">Skills</p>
+                        <div style="display: flex;justify-content: space-between;flex-direction: column;gap: 0.3rem;">
+                            <span>HTML CSS Javascript</span>
+                            <span>MySQL MongoDB</span>
+                            <span>C# Python jquery Tailwind</span>
+                        </div>
+
+                    </div>
+                    <div style="display: flex; flex-direction: column;text-align: center;">
+                        <p style="font-weight: bold;margin: 2rem 1rem;">Experience</p>
+                        <div style="display: flex;justify-content: end;flex-direction: column;">
+                             <span>Basketball Coach - Eden School (Jan 2025 - Present)</span>
+                            <span>Python Developer - CodeSoft Internship (March 2025 - April 2025)</span>
+                            <span>Robotics IoT Consultant - AlgoAtWork Freelannce (Feb 2025 - Apr 2025)</span>
+                        </div>
+                    </div>
+                    <div class="grey">
+                        <span></span>
+                        <span></span>
+                    </div>
+                    </div>
+                </section>
+
+              </div>
+            <div class="apple-click">
+                    <p id="click_cert" onclick="certs()">Certifications</p>
+            </div>
+            <img src="images/full.webp" onclick="goFullScreen()" id="fullscreen" class="apps" alt="">
+           
+            <figure onclick="projectPage()">
+                <span class="notisf">10+</span>
+                <i class="fa-solid fa-diagram-project apps project_icon"></i>
+            </figure>
+            <figure>
+                <span class="notisf">10+</span>
+                <img onclick="goLink()" src="images/linkedin.webp" class="apps" alt="">
+            </figure>
+            <a href="cv/cv.pdf">
+                <img src="images/cv.webp" alt="" class="apps">
+            </a>
+            <figure>
+                <span class="notisf">3+</span>
+                <img onclick="goGit()" src="images/github.webp" alt="" class="apps">
+            </figure>
+        </section>
+        <aside id="weather" class="gadgets">
+            <div>
+                <span id="city"></span>
+                <span id="temp"><sup>o</sup></span>
+            </div>
+            <div>
+                <span id="emoji"></span>
+                <span id="des"></span>
+            </div>
+        </aside>
+        
+    </main>
+    <footer>
+        <article class="insp">
+            <img src="images/tailwind.webp" style="border-radius: 20px;" width="30px" alt="">
+            <p>An Inspiring <span style="font-weight: bold; color: black;">Software Engineer</span></p>
+            <!-- <p>Software Engineer</p>
+            <p>Software Developer</p>
+            <p>DevOpps Engineer</p>
+            <p>AI Enthusiast</p> -->
+        </article>
+        <section class="icons">
+            <a href="#">
+                <img src="images/linkedin.webp" onclick="goLink()" class="icons-foot" alt="">
+            </a>
+            <a href="#" onclick="projectPage()">
+                <i class="fa-solid fa-diagram-project icons-foot project_icon"></i>
+            </a>
+            <a href="#" onclick="contactClick()">
+                <i  class="fa-solid fa-address-book icons-foot"></i>
+            </a>
+        </section>
+    </footer>
+    
+</body>
+</html>
